@@ -1,0 +1,96 @@
+﻿@charset "utf-8";
+/* CSS Document */
+
+.flow {
+	width: 100%;
+	margin: 30px auto;
+	height: 50px;
+	padding: 20px 0 0 0;
+	position: relative;
+}
+
+.flowList {
+	float: left;
+	height: 7px;
+	background: #ccc;
+}
+.flowListBox {
+	position: absolute;
+	width: 100%;
+	left: 0;
+	top: 10px;
+}
+
+.flowListBox .flowList {
+	float: left;
+	text-align: center;
+}
+
+.flowListBox .flowList em {
+	display: inline-block;
+	width: 24px;
+	height: 24px;
+	-moz-border-radius: 24px;
+	-webkit-border-radius: 24px;
+	border-radius: 24px;
+	background: #ccc;
+	text-align: center;
+	font-size: 14px;
+	line-height: 24px;
+	font-style: normal;
+	font-weight: bold;
+	color: #fff;
+}
+
+.flowListBox .flowList strong {
+	display: inline-block;
+	height: 26px;
+	line-height: 26px;
+	font-weight: 400;
+}
+
+.flowList.for-cur {
+	background: #5bc0de;
+}
+
+.flowListBox .for-cur em {
+	background: #5bc0de;
+	margin-top: -10px;	
+}
+
+.flowListBox .for-cur strong {
+	color: #5bc0de;
+}
+
+.successs {
+	text-align: center;
+	padding: 20px 0 60px 0;
+}
+
+.successs h3 {
+	padding: 20px;
+	font-size: 25px;
+	color: #5bc0de;
+}
+@media (min-width:320px) {
+    .form-group .col-sm-6
+    {
+      margin:5% auto; 
+    }
+}
+
+@media (min-width:768px) {
+
+}
+
+@media (min-width:992px) {
+    .flowListBox .for-cur strong,.flowListBox .for-cur em
+    {
+        font-size:17px;
+    }
+
+}
+
+@media(min-width:1200px) {
+
+}

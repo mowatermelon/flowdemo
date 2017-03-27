@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+
+<html>
+<head id="Head1">
+    <title>流程选择demo</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE9,Chrome=1" />
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css" />
+    <link href="css/common.css" rel="stylesheet" type="text/css" />
+    <link href="css/flow.css" rel="stylesheet" type="text/css"  />
+    <style>
+    .flowListBox .flowList{
+	    width: 16.5%;
+    }
+    </style>
+</head>
+<body>
+  <div id="header">
+    <div class="headerBox">
+      <span class="Rtitle">网站名称</span>
+    </div>
+  </div>
+  <div class="main container">
+    <div class="row">
+      <div class="pull-right">
+        <a class="alert alert-info" id="returnMain">返回首页</a>
+      </div>
+      <div class="col-md-12">
+        <div class="flow">
+			    <div class="flowList for-cur forfirst">
+			    </div>
+			    <div class="flowList forsec">
+			    </div>
+			    <div class="flowList forthird">
+			    </div>
+			    <div class="flowList forfour">
+			    </div>
+          <div class="flowList forfifth">
+          </div>
+          <div class="flowList forsixth">
+          </div>
+			    <div class="flowListBox">
+				    <div class="flowList for-cur forfirst">
+					    <em>1</em><br/><strong>第一步</strong>
+				    </div>
+				    <div class="flowList forsec">
+					    <em>2</em><br/><strong>第二步</strong>
+				    </div>
+				    <div class="flowList forthird">
+					    <em>3</em><br/><strong>第三步</strong>
+				    </div>
+				    <div class="flowList forfour">
+					    <em>4</em><br/><strong>第四步</strong>
+				    </div>
+            <div class="flowList forfifth">
+					    <em>5</em><br/><strong>第五步</strong>
+				    </div>
+				    <div class="flowList forsixth">
+					    <em>6</em><br/><strong>完成</strong>
+				    </div>
+			    </div>
+		    </div>
+      </div>
+      <div class="form-horizontal">
+          <!--第一步/-->
+  	    <div class="col-md-12" id="firstdiv">
+            <ol>
+                <li class="h4 alert alert-info">demo01demo01demo01demo01demo01demo01demo01demo01demo01demo01</li>
+                <li class="h4 alert alert-info">demo01demo01demo01demo01demo01demo01demo01demo01demo01demo01</li>
+                <li class="h4 alert alert-info">demo01demo01demo01demo01demo01demo01demo01demo01demo01demo01</li>
+            </ol>
+  			    <div class="form-group">
+  				    <div class="col-sm-6">
+  					    <button type="button" class="btn btn-primary btn-block font17" id="btn_tj" onclick="methodBtn('sec','forward',false)">提交</button>
+  				    </div>
+  		            <div class="col-sm-6">
+  			            <button type="button" class="btn btn-primary btn-block font17" id="oneBack">上一步</button>
+  		            </div>
+  			    </div>
+  	    </div>
+  	    <!--第二步/-->
+  	    <div id ="secdiv" class="col-md-12">
+  			    <!--flow/-->
+            <ol>
+                <li class="h4 alert alert-info">demo02demo02demo02demo02demo02demo02demo02demo02demo02demo02</li>
+                <li class="h4 alert alert-info">demo02demo02demo02demo02demo02demo02demo02demo02demo02demo02</li>
+                <li class="h4 alert alert-info">demo02demo02demo02demo02demo02demo02demo02demo02demo02demo02</li>
+            </ol>
+  			    <div class="form-group">
+  				    <div class="col-sm-6">
+  					    <button type="button" class="btn btn-primary btn-block font17" id="btn_tj2" onclick="methodBtn('third','forward',false)">提交</button>
+  				    </div>
+  		            <div class="col-sm-6">
+  			            <button type="button" class="btn btn-primary btn-block font17" onclick="methodBtn('first','back',false)">上一步</button>
+  		            </div>
+  			    </div>
+  	    </div>
+  	    <!--第三步/-->
+  	    <div id ="thirddiv" class="col-md-12">
+  			    <!--flow/-->
+            <ol>
+                <li class="h4 alert alert-info">demo03demo03demo03demo03demo03demo03demo03demo03demo03demo03</li>
+                <li class="h4 alert alert-info">demo03demo03demo03demo03demo03demo03demo03demo03demo03demo03</li>
+                <li class="h4 alert alert-info">demo03demo03demo03demo03demo03demo03demo03demo03demo03demo03</li>
+            </ol>
+  			    <div class="form-group">
+  				    <div class="col-sm-6">
+  					    <button type="button" class="btn btn-primary btn-block font17" id="btn_tj3" onclick="methodBtn('four','forward',true)">提交</button>
+  				    </div>
+  				    <div class="col-sm-6">
+  					    <button type="button" class="btn btn-primary btn-block font17" onclick="methodBtn('sec','back',false)">上一步</button>
+  				    </div>
+  			    </div>
+  		  </div>
+  	    <!--第四步/-->
+  	    <div id ="fourdiv" class="col-md-12">
+          <!--flow/-->
+          <ol>
+              <li class="h4 alert alert-info">demo04demo04demo04demo04demo04demo04demo04demo04demo04demo04</li>
+              <li class="h4 alert alert-info">demo04demo04demo04demo04demo04demo04demo04demo04demo04demo04</li>
+              <li class="h4 alert alert-info">demo04demo04demo04demo04demo04demo04demo04demo04demo04demo04</li>
+          </ol>
+          <div class="form-group">
+            <div class="col-sm-6">
+              <button type="button" class="btn btn-primary btn-block font17" id="btn_tj2" onclick="methodBtn('fifth','forward',false)">提交</button>
+            </div>
+                <div class="col-sm-6">
+                  <button type="button" class="btn btn-primary btn-block font17" onclick="methodBtn('third','back',false)">上一步</button>
+                </div>
+          </div>
+  	    </div>
+            <!--第五步/-->
+    	    <div class="col-md-12" id="fifthdiv">
+              <ol>
+                  <li class="h4 alert alert-info">demo05demo05demo05demo05demo05demo05demo05demo05demo05demo05</li>
+                  <li class="h4 alert alert-info">demo05demo05demo05demo05demo05demo05demo05demo05demo05demo05</li>
+                  <li class="h4 alert alert-info">demo05demo05demo05demo05demo05demo05demo05demo05demo05demo05</li>
+              </ol>
+    			    <div class="form-group">
+    				    <div class="col-sm-6">
+    					    <button type="button" class="btn btn-primary btn-block font17" id="btn_tj" onclick="methodBtn('sixth','forward',true)">提交</button>
+    				    </div>
+    		            <div class="col-sm-6">
+    			            <button type="button" class="btn btn-primary btn-block font17" onclick="methodBtn('four','back',false)">上一步</button>
+    		            </div>
+    			    </div>
+    	    </div>
+          <!--第六步/-->
+    	    <div id ="sixthdiv" class="col-md-12">
+    		    <div class="successs">
+    			    <h3>恭喜您，修改成功！</h3>
+    			    <span id="second_show"></span>
+    			    <h3>后，自动跳转到登录界面！</h3>
+    		    </div>
+    	    </div>
+     </div>
+    </div>
+  </div>
+
+<!--content/-->
+
+
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/UI.js"></script>
+</body>
+
+</html>
